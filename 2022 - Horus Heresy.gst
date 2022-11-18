@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="31" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="32" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -201,6 +201,63 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9658-3768-cea2-6062" type="min"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="c2d2-1326-3076-889c" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9725-2d0a-cb56-757b" name="Kharash" hidden="false" targetId="71fa-da0d-0056-9072" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e106-2c9c-ca77-e0da" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b838-4db8-a27a-e478" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b426-d42f-be9e-f9ef" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3c2a-d1c1-8440-9661" name="Immune to Fear (X) (Sire of the Night Lords)" hidden="false" targetId="ac97-b57a-3244-a9fb" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
       <rules>
@@ -211,6 +268,35 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
 • No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="693b-9336-1977-ff12" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d829-3cbe-f415-b6b1" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6b45-501e-f1b8-d3a5" name="Immune to Fear (X) (Sire of the Night Lords)" hidden="false" targetId="ac97-b57a-3244-a9fb" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="e2b6-b770-784c-9e95" name="Vehicle:" hidden="false"/>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
@@ -306,6 +392,24 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       </rules>
       <infoLinks>
         <infoLink id="7163-a73e-7f6d-2357" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="394d-2487-9e30-7504" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b6b2-36a9-13ed-03e0" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="0d4f-ff28-d819-a512" name="Deep Strike:" hidden="false">
@@ -494,14 +598,15 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0ca-ca8a-f177-7ba1" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0ca-ca8a-f177-7ba1" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d82b-1980-74f8-5dac" name="Allied Detachment" hidden="false"/>
@@ -544,6 +649,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c50-e0db-a243-7859" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="11f2-472f-c1d1-9ae9" name="Legiones Astartes" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -620,6 +726,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                      <comment>    node_id_b932-667a-4b43-8331</comment>
+                    </condition>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -812,6 +921,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -835,6 +947,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -858,6 +973,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -887,6 +1005,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -911,6 +1032,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -935,6 +1059,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -959,6 +1086,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -983,6 +1113,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1007,6 +1140,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1031,6 +1167,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1055,6 +1194,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7521,6 +7663,22 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f4d2-060e-097d-8afc" name="Sire of the Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8922-a9ba-3e18-7cad" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc1-473f-6846-1c9f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8936-025b-336c-6810" name="Sire of the Night Lords" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+          <characteristics>
+            <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with the Infantry, Dreadnought or Cavalry Unit Type and Legiones Astartes (Night lords) special rule in the same army as Konrad Curze gain the Night Vision and Bloody Murder special rules and are immune to the effects of the Fear (X) special rule. In addition,  an army with Konrad Curze as it Warlord gain an additional Reaction in the Movement phase as long as Konrad Curze has not been removed as a casualty.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -9162,18 +9320,6 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
         </selectionEntryGroup>
         <selectionEntryGroup id="e8d2-09dd-fce7-2721" name="Legion RoW Warlord Traits" hidden="true" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="2bae-43b8-8238-9539" name="Venerable Ancient (Fury Of The Ancients)" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a61c-f403-120c-0dc4" name="Venerable Ancient" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Contemptor Dreadnought with this upgrade gains the Character Sub-type, the Master of the Legion and Eternal Warrior special rules and an iron halo (increasing its Invulnerable Save to 4+, but not replacing all the effects of the atomantic deflector), but may not select a Command Squad or any other unit using a variant of the Retinue special rule. In addition, it must be selected as the Warlord of an army that includes it.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="5c20-a620-2152-7623" name="Master of Armour (Armoured Spearhead)" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="338c-2bae-3dd6-3180" name="Master of Armour" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
@@ -9234,7 +9380,7 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cf3e-1d75-6f91-651f" name="Rites of War (Text Only / Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cf3e-1d75-6f91-651f" name="Rites of War (Legion Universal RoWs done, Legion Specific ones TBC)" publicationId="a716-c1c4-7b26-8424" page="" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="797b-0bd6-8cbf-f25a" type="max"/>
       </constraints>
@@ -9627,7 +9773,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ce40-b353-8eb4-ab42" name="Chogorian Brotherhood (WS)" publicationId="817a-6288-e016-7469" page="179" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ce40-b353-8eb4-ab42" name="Chogorian Brotherhood^ (WS)" publicationId="817a-6288-e016-7469" page="179" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9648,7 +9794,9 @@ Limitations
 • All models with the Infantry Unit Type in a Detachment using this Rite of War gain the Outflank special rule.
 Limitations
 • Any unit made up entirely of models with the Infantry Unit Type in a Detachment using this Rite of War that does not begin play Embarked on a model with the Transport Sub-type, or any model with the Vehicle Unit Type without either the Transport or Fast Sub-types, must begin play in Reserve if the mission allows it. If the mission does not allow any units to be placed into Reserves then the unit is instead deployed as normal.
-• A Detachment using this Rite of War may not include any Heavy Support or Fortification choices, unless those choices are entirely composed of models with the Flyer Sub-type.</description>
+• A Detachment using this Rite of War may not include any Heavy Support or Fortification choices, unless those choices are entirely composed of models with the Flyer Sub-type.
+
+^Manually check limitations on Deployement</description>
             </rule>
           </rules>
           <costs>
@@ -9989,13 +10137,12 @@ Limitations
           <rules>
             <rule id="1e19-5ce3-8e98-d75e" name="The Logos Lectora" publicationId="817a-6288-e016-7469" page="293" hidden="false">
               <description>Effects
-• A Detachment using this Rite of War may take Medusan Immortals Squads as Troops choices.
-• All models in any Medusan Immortal Squad selected as a Troops choice in a Detachment using this Rite of War gain the Line Unit Sub-type and the Heart of the Legion special rule.
-• All models in a Detachment using this Rite of War with both the Legiones Astartes (Iron Hands) and Bitter Duty special rules also gain the Hatred (Traitors) special rule. 
-• Any models with both the Independent Character and Legiones Astartes (Iron Hands) special rules may be given the Bitter Duty special rule for no additional cost.
+• At the beginning of each turn in which the controlling player of a Detachment using this Rite of War is the Active player, that player may select one of the Logos Lectora Commands that follow, but may not select the same Command twice in a row (however, each command may be selected more than once in a single battle as long as it is not selected twice in a row, without a different Logos Lectora Command being selected before any command is repeated). The effects of this Command are applied to all models in the army with both the Legiones Astartes (Ultramarines) special rule and the Infantry Unit Type, and last until the start of the controlling player’s next turn as the Active player:
+
 Limitations
-• This Rite of War may only be used by an army that has the Loyalist Allegiance.
-• An army with any Detachment using this Rite of War may not include Ferrus Manus.
+• Detachments using this Rite of War must take an additional Compulsory HQ choice in addition to that usually required by their Force Organisation chart, and this additional Compulsory choice must be either a Master of Signal Consul or a Legion Damocles Command Rhino.
+• Detachments using this Rite of War must take an additional Compulsory Troops choice in addition to that usually required by their Force Organisation chart.
+• Units which are part of a Detachment using this Rite of War may not deploy using the Infiltrate special rule or enter play via a Deep Strike Assault, Subterranean Assault or Flanking Assault (normal Reserves are, however, allowed). This means that certain units which may only enter play in this fashion, such as Legion Drop Pods, may not be taken as part of the Detachment.
 
 LOGOS LECTORA COMMANDS
 - Full March: All models with the Infantry Unit Type and the Legiones Astartes (Ultramarines) special rule must increase their Movement Characteristic by +2, but reduce their Ballistic Skill and Weapon Skill Characteristics by -1.
@@ -11467,6 +11614,21 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     </rule>
     <rule id="f372-a365-a036-cbc4" name="Psy-shock" publicationId="15a4-fc68-502d-48a9" page="135" hidden="false">
       <description>A unit that includes at least one model with the Psyker Unit Sub-type or Daemon Unit Type, and which suffers one of more unsaved Wound from a weapon with this special rule also suffers Perils of the Warp (see page 201 of the Horus Heresy: Age of Darkness rulebook). Any given unit may only suffer Perils of the Warp once per Phase due to the effects of this special rule, regardless of how many enemy units attack that unit or how many weapons with this special rule are present in the attacking units.</description>
+    </rule>
+    <rule id="64ca-719e-b563-e3df" name="Independent Fire Control" publicationId="15a4-fc68-502d-48a9" hidden="false">
+      <description>After a model with this special rule (for a unit composed entirely of models with this special rule) has resolved a Shooting Attack targeting an enemy unit, any weapons that were not used to attack (either dur to being out of line of sight or range of the enemy units, or because the controlling player voluntarily opted not to attack with them) may make a nummber of Secondary Shooting Attacks using those weapons that did not fire as part of its initial Shooting Attack. Each weapon not fired as part of the initial Shooting Attack may be fired once, either all of them in a single Secondary Shooting Attack, each in a separate Secondaary Shooting Attack targeting a different enemy unit of any combination - however,each weapon may only be used to attack once and in no more than one Secondary Shooting Attack. All Secondary Shooting Attacks obey all the normal rules for range and line of sight and are with a modifier of -1 on all To Hit rolls.</description>
+    </rule>
+    <rule id="71fa-da0d-0056-9072" name="Kharash" hidden="false">
+      <modifiers>
+        <modifier type="append" field="description" value="In Sagyar Mazan, all models with both the Legiones Astartes (WhiteScars) and Kharash special rules in a Detachment using this Rite of War gain the Fearless special rule for theduration of any Assault phase in which they make asuccessful Charge."/>
+      </modifiers>
+      <description>No enemy player may ever score any Victory points for the destruction of a unit with this special rule regardless of the scenario player or any victory conditions in effect. In addition, a model with this special rule may not join any unit that is not composed entirely of models that also have the Kharash special rule, nor may a model that does not have the Kharash special rule join a unit that includes any models with that special rule.</description>
+    </rule>
+    <rule id="5072-2b33-d062-210f" name="Bloody Murder" publicationId="09c5-eeae-f398-b653" page="199" hidden="false">
+      <description>When a unit composed entirely of models with the special rule declares a Charge targeting a unit that is Pinned or Falling Back, the Charge roll gains an additional +1 modifier, and if the Charge is succesful then all models in the Charging unit gain +1 Attack for the duration of the turn in which that Charge is made.</description>
+    </rule>
+    <rule id="ac97-b57a-3244-a9fb" name="Immune to Fear (X) (Sire of the Night Lords)" publicationId="d640-8853-3dd7-26a6" page="200" hidden="false">
+      <description>Immune to the effects of the Fear (X) special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
