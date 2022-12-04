@@ -4446,10 +4446,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
+                    <modifier type="decrement" field="6256-f8ad-a58b-443f" value="1.0"/>
+                    <modifier type="decrement" field="bf21-75cd-b251-fb81" value="1.0"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6256-f8ad-a58b-443f" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf21-75cd-b251-fb81" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6256-f8ad-a58b-443f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf21-75cd-b251-fb81" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="efb9-766b-71c9-ff55" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
@@ -4679,10 +4681,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
+                    <modifier type="decrement" field="5573-1124-df02-a58d" value="1.0"/>
+                    <modifier type="decrement" field="88f7-02f6-e9db-d6bd" value="1.0"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5573-1124-df02-a58d" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f7-02f6-e9db-d6bd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5573-1124-df02-a58d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f7-02f6-e9db-d6bd" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="891b-afb6-90e8-de53" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
